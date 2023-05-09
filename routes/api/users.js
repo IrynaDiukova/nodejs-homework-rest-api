@@ -2,7 +2,7 @@ const express = require("express");
 const userController = require("../../controllers/users");
 const controllerWrapper = require("../../helpers/controllerWrapper");
 const schema = require("../../schemas/users");
-const { authenticate, validateBody } = require("../../middlewares");
+const { validateBody, authenticate } = require("../../middlewares");
 
 const router = express.Router();
 
