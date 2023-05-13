@@ -8,6 +8,7 @@ const registerSchema = Joi.object({
     email: Joi.string().pattern(emailRegexp).required(),
     subscription: Joi.string().valid(...subscriptionList),
     token: Joi.string(),
+    avatarURL: Joi.string(),
 });
 
 const loginSchema = Joi.object({
